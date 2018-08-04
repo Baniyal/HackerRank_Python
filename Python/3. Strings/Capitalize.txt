@@ -1,0 +1,9 @@
+# if we get any name let aayush baniyal
+# first we need to split the input
+# then just simply use str_name.capitalize function
+# so that we change the first character of the string to
+# uppercase character
+
+a_string = input().split(' ') 
+print(' '.join((word.capitalize() for word in a_string))) 
+
