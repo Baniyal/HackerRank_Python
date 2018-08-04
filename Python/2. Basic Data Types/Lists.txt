@@ -1,0 +1,14 @@
+n = int(input())
+l = []
+for _ in range(n):
+    s = input().split()
+    #s is a list of the input
+    cmd = s[0]
+    #cmd will be the first word of those interactions
+    args = s[1:]
+    #using list slicing for the arguments	
+    if cmd !="print":
+        cmd += "("+ ",".join(args) +")"
+        eval("l."+cmd)
+    else:
+        print(l)

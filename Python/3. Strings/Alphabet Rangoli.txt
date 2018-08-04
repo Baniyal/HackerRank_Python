@@ -1,0 +1,25 @@
+import string
+alpha = string.ascii_lowercase
+#all the alphabet line stored in alpha in the form of a list
+
+n = int(input())
+L = []
+
+for i in range(n):
+    s = "-".join(alpha[i:n])
+    #splitting the list to just first the middlemost line and then going upwards
+    # one char less along the way
+    # join function to join the char with the string
+    #preceding the join
+    
+    L.append(s[::-1]+s[1:])
+    #make the  list of all the rows individually
+    #by reversing the values of the list and appending them
+
+width = len(L[0])
+#use for padding
+for i in range(n-1, 0, -1):
+   print(L[i].center(width, "-"))
+
+for i in range(n):
+    print(L[i].center(width, "-"))

@@ -1,0 +1,15 @@
+#number of enteries to be made
+n = int(input())
+
+#awesome way to use nested lists !!
+#nested lists mean storing multiple values at the same indexx
+#kind of like a tupple
+marksheet = [[input(), float(input())] for _ in range(n)]
+
+#to get the second highest marks value from the nested list using list comprehension
+second_highest = sorted(list(set([marks for name, marks in marksheet])))[1]
+#using for name , marks because the list is iterable over both of these values although'
+#using the list we are only making the list of the marks only
+
+print('\n'.join([a for a,b in sorted(marksheet) if b == second_highest]))
+#printing names of all those students who are having values equal to second highest

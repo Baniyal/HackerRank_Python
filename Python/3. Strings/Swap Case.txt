@@ -1,0 +1,12 @@
+def swap_case(s):
+    x = [ ]
+    for each in s :
+        if each.isupper() :# checks if letter is in uppercase
+            x.append(each.lower())
+        elif each.islower():#checks if letter in lower case
+            x.append(each.upper())
+        else :#if neither simply append to the list
+            x.append(each)
+        
+    str1 = ''.join(str(e) for e in x) #converting a list onto a string
+    return str1

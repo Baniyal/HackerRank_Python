@@ -1,0 +1,11 @@
+#making an empty dictionary  
+marks = {}
+for _ in range(int(input())):
+    # taking an input in a line 
+    # seperate them using the space using the function
+    # it returns a list
+    line = input().split()
+    # dictionary having the index as names  
+    marks[line[0]] = list(map(float, line[1:]))
+    # marks are stored in a list #using list slicing
+print('%.2f' %(sum(marks[input()])/3))
