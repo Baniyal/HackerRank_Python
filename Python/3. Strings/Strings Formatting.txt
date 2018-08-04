@@ -11,7 +11,15 @@ We can solve this challenge using the .format tool.
 Note: Capital X  is used to print the hexadecimal characters in uppercase. 
 
 
-
+ example of foramt function
+ print("Temp today is {0:0.f} degrees".format(45612.1212))
+ this will subsitute the value 
+ 
+ instead of f for float we can also use
+ d = decimal
+ s = string
+ b = binary
+ o = octal
 
 
 
