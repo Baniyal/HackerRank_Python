@@ -1,0 +1,8 @@
+a = int(input())
+l1 = set(map(int,input().split()))
+b = int(input())
+l2 = set(map(int,input().split()))
+x = l1.difference(l2)
+y = l2.difference(l1)
+z = x.union(y)
+print("\n".join( str(a) for a in sorted(z)))
