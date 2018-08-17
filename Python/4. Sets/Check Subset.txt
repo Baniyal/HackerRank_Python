@@ -1,0 +1,22 @@
+def check( a , b ):
+    x = True
+    
+    for each in a :
+        if each in b:
+            continue
+        else:
+            x = False
+            break
+    return x
+
+for _ in range(int(input())):
+    x, a, z, b = input(), set(input().split()), input(), set(input().split())
+    print(check(a,b))
+
+*************************************************************
+************************************************************
+************************************************************
+print not bool(A.difference(B))
+
+this also will be true because if its a subset then the difference 
+would be nothing.
