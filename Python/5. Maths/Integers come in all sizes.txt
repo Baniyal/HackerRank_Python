@@ -1,0 +1,8 @@
+a,b,c,d = (int(input()) for _ in range(4))
+print (pow(a,b)+pow(c,d))
+
+The purpose of this assignment was more than just this
+pow function
+http://deeplearning.net/software/theano/tutorial/python-memory-management.html
+follow the link to know about memory management in PYTHON.
+Must read

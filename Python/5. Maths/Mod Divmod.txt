@@ -1,0 +1,4 @@
+a, b = int(input()), int(input())
+# using format specifier
+# d contains a tuple containing the quotient and remainder 
+print("{d[0]}\n{d[1]}\n{d}".format(d=divmod(a, b)))
