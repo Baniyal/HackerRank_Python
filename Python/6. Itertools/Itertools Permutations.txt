@@ -1,0 +1,11 @@
+from itertools import permutations
+
+a = input().split()
+x = a[0]
+y = int(a[1])
+print(*[''.join(i) for i in permutations(sorted(x),int(y))],sep='\n')
+
+#sep is used on how to end the line 
+# with it resulting in space(for input in the same line)
+# or sep = "\n " with it resulting in a new line
+# join is used for putting one string at a time

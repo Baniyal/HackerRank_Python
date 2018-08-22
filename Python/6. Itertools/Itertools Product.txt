@@ -1,0 +1,8 @@
+from itertools import product
+
+a = list(map(int,input().split()))
+b = list(map(int,input().split()))
+
+print(*list(product(a,b)))
+# * is used for unpacking of the list and it can be used with any iterable
+# (*arr) is it like [value at (arr)]
