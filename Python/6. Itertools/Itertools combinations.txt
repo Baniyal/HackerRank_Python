@@ -1,0 +1,12 @@
+from itertools import combinations
+
+x , y  =input().split()
+
+for i in range(1, int(y)+1):
+    for j in combinations(sorted(x), i):
+        print(''.join(j))
+        
+# since we have to find the combinations from all length 
+# given in the test case is 2 but we also have to consider all
+# those who are of length 1 as well
+# this is why we have the first for loop for
