@@ -1,0 +1,13 @@
+from collections import OrderedDict
+d = OrderedDict()
+# making an empty ordered dictionary
+for _ in range(int(input())):
+# the number of inputs lines it must read
+    item, space, quantity = input().rpartition(' ')
+#rpartition  - seperates the string at the last occurencce of the specified seperator
+#which in this case is the whitespace
+    d[item] = d.get(item, 0) + int(quantity)
+#inputting all the values into the database.
+#d.items() return all the values in the dictionary
+for item, quantity in d.items():
+    print(item, quantity)
